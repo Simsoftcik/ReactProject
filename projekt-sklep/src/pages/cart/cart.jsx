@@ -34,7 +34,7 @@ const Cart = () => {
                 })}
             </div>
             {totalCartAmount > 0 ?
-                <div className="checkout">
+                <div className="checkout-correct">
                     <p> Podsumowanie: {displayedTotalCartAmount} zł</p>
                     <button onClick={() => navigate("/")}> Kontynuuj Zakupy</button>
                     <button onClick={() => setDisplayedTotalCartAmount((prev)=>prev+1)}> Zapłać</button>

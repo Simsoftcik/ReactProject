@@ -23,7 +23,7 @@ const CartItem = (props) => {
 
                     {/*<input value={cartItems[id]} onChange={(event) => {setCartItemCount(Number(event.target.value) , id)}}/>*/}
 
-                    <input
+                    <input className= "changer"
                         value={inputValue}
                         onKeyDown={(event) => {
                             if ( event.key === 'Enter' && event.target.value.length > 0) {

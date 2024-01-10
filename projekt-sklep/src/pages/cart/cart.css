@@ -3,17 +3,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f2f2f2;
+    padding-top: 10vh;
 }
 
 .cartItem {
-    width: 700px;
-    height: 250px;
+    width: 750px;
+    height: 300px;
     display: flex;
 
     align-items: center;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
     margin: 30px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .cartItem img {
@@ -31,18 +36,66 @@
     text-align: center;
     font-weight: bolder;
 }
-
-.checkout button {
-    width: 150px;
-    height: 50px;
-    background-color: rgb(19, 19, 19);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin: 10px;
-    cursor: pointer;
+.checkout-correct {
+    width: 750px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 6vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    overflow: hidden; /* Ukrywanie przekraczających granice elementów */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacja przejścia */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
 }
 
+.checkout-correct button {
+    background-color: transparent;
+    border: 3px solid rgb(19, 19, 19);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.4s ease, color 0.4s ease, scale 0.4s;
+    font-weight: bold;
+}
+
+.checkout-correct button:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    scale: 1.1;
+}
+
+.checkout {
+    width: 700px;
+    height: 250px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    overflow: hidden; /* Ukrywanie przekraczających granice elementów */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacja przejścia */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkout button {
+    background-color: transparent;
+    border: 3px solid rgb(19, 19, 19);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.4s ease, color 0.4s ease, scale 0.4s;
+    font-weight: bold;
+}
+
+.checkout button:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    scale: 1.1;
+}
 .product-name {
     font-size: 30px;
     font-weight: bold;
@@ -52,3 +105,14 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+.changer {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 10px;
+    max-width: 120px;
+}
+
