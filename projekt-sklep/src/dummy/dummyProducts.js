@@ -7,6 +7,7 @@ export const PRODUCTS = [
         productName: "Skurwol",
         price: 0.0,
         productImage: productPhoto2,
+        description: "Skurwol jakich mało",
     },
     {
         id: 1,

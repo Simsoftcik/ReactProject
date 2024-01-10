@@ -1,16 +1,21 @@
 import React from 'react';
-import {PRODUCTS} from "../../dummy/dummyProducts.js";
+import { Link } from 'react-router-dom';
+import { PRODUCTS } from "../../dummy/dummyProducts.js";
+import "./shop.css";
 import Product from "./product.jsx";
-import "./shop.css"
 
 const Shop = () => {
     return (
         <div className="shop">
             <div className="products">
-                {PRODUCTS.map((product) => <Product data={product}/>)}
+                {PRODUCTS.map((product) => (
+                    <Link key={product.id} to={`/products/${product.productName}`}>
+                        <Product data={product} />
+                    </Link>
+                ))}
             </div>
         </div>
     );
-}
+};
 
 export default Shop;
