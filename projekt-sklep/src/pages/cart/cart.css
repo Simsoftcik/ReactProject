@@ -31,11 +31,28 @@
     font-size: 30px;
 }
 
-.countHandler input {
+.countHandler input{
     width: 40px;
     text-align: center;
     font-weight: bolder;
 }
+
+.countHandler button {
+    background-color: transparent;
+    border: 2px solid rgba(147, 142, 142, 0.5);
+    padding: 5px 20px 5px 20px;
+    border-radius: 15px;
+    transition: background-color 0.4s ease, color 0.4s ease, scale 0.4s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.countHandler button:hover {
+    background-color: rgb(65, 62, 62);
+    color: white;
+    scale: 1.1;
+}
+
 .checkout-correct {
     width: 750px;
     height: 150px;
