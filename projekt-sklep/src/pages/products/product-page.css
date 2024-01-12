@@ -1,0 +1,93 @@
+.p-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+
+
+}
+
+.p-info {
+    display: flex;
+    width: 85vw;
+    height: 75vh;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.p-pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p-bttn-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    align-items: center;
+    gap: 20px;
+}
+
+.p-left-details, .p-pricing , .p-right-details {
+    padding: 20px;
+    flex: 1;
+}
+
+.p-right-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.p-left-details {
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.p-info img {
+    /*height: auto;*/
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+
+}
+
+.p-info h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.p-price {
+    font-weight: bold;
+    color: green;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.p-addToCartBttn, .p-removeOneFromCartBttn, .p-removeCompletlyFromCartBttn {
+    background-color: transparent;
+    border: 3px solid rgb(19, 19, 19);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.4s ease, color 0.4s ease, scale 0.4s;
+    font-weight: bold;
+    width: 70%;
+}
+
+.p-addToCartBttn:hover, .p-removeOneFromCartBttn:hover, .p-removeCompletlyFromCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    scale: 1.1;
+}
+
+

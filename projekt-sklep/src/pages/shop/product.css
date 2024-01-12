@@ -1,0 +1,63 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between; !* Zapewnia równomierne rozłożenie treści *!*/
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.product img {
+    width: 100%; /* Dostosowanie szerokości obrazka */
+    object-fit: cover; /* Zapewnia że obrazy będą pokrywać obszar bez utraty proporcji */
+    height: 200px; /* Stała wysokość dla wszystkich obrazków */
+}
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgb(19, 19, 19);
+    overflow: hidden;
+}
+
+.product:hover img {
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
+.product .product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product .product-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.addToCartBttn {
+    background-color: transparent;
+    border: 3px solid rgb(19, 19, 19);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.4s ease, color 0.4s ease, scale 0.4s;
+    font-weight: bold;
+    width: 90%;
+}
+
+.addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    scale: 1.1;
+}
+
+a {
+    text-decoration: none;
+    color: #1a1a1a;
+}

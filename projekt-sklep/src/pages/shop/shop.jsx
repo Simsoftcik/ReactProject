@@ -9,9 +9,9 @@ const Shop = () => {
         <div className="shop">
             <div className="products">
                 {PRODUCTS.map((product) => (
-                    <Link key={product.id} to={`/products/${product.productName}`}>
-                        <Product data={product} />
-                    </Link>
+
+                        <Product data={product} key={product.id}/>
+
                 ))}
             </div>
         </div>
