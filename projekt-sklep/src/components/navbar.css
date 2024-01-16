@@ -20,6 +20,7 @@
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         transition: color 0.3s, transform 0.3s, font-weight 0.3s;
+        text-underline: none;
     }
 
     .navbar-brand:hover {

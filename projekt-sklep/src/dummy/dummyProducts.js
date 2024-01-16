@@ -1,19 +1,20 @@
 import productPhoto2 from "./dummyPhoto2.png";
 import productPhoto1 from "./dummyPhoto.png";
+import productPhoto3 from "./cannon.png";
 
 export const PRODUCTS = [
     {
         id: 0,
-        productName: "Skurwol",
-        price: 0.0,
+        productName: "Kosmita",
+        price: 1.0,
         productImage: productPhoto2,
-        description: "Skurwol jakich mało",
+        description: "Kosmita jakich mało",
     },
     {
         id: 1,
         productName: "IPhone",
         price: 999.0,
-        productImage: productPhoto2,
+        productImage: "https://idream.pl/images/detailed/61/iPhone_13_blue.png",
         description: "Iphone jakich mało",
     },
     {
@@ -27,42 +28,42 @@ export const PRODUCTS = [
         id: 3,
         productName: "Cannon M50 Camera",
         price: 699.0,
-        productImage: productPhoto2,
+        productImage: productPhoto3 ,
         description: "Cannon jakich mało",
     },
     {
         id: 4,
-        productName: "WLS Van Gogh Denim Jacket",
+        productName: "Kopacz torfu",
         price: 228.0,
-        productImage: productPhoto1,
-        description: "WLS jakich mało",
+        productImage: productPhoto2,
+        description: "Kopacz torfu jakich mało",
     },
     {
         id: 5,
-        productName: "LED Light Strips",
+        productName: "Fancy Camera",
         price: 19.99,
-        productImage: productPhoto2,
-        description: "LED jakich mało",
+        productImage: productPhoto3,
+        description: "Fancy Camera jakich mało",
     },
     {
         id: 6,
-        productName: "SPECTRUM LS TEE",
-        price: 68.0,
-        productImage: productPhoto2,
-        description: "SPECTRUM jakich mało",
+        productName: "Zepsuty Macbook Pro 2022 (M1)",
+        price: 8.0,
+        productImage: productPhoto1,
+        description: "Zepsuty Macbook jakich mało",
     },
     {
         id: 7,
-        productName: "AUTO SERVICE SHIRT by GOLF WANG",
+        productName: "Zepsuty Cannon M50 Camera",
         price: 120.0,
-        productImage: productPhoto1,
-        description: "AUTO jakich mało",
+        productImage: productPhoto3,
+        description: "Zepsuty Cannon jakich mało",
     },
     {
         id: 8,
-        productName: "DON'T TRIP UNSTRUCTURED HAT",
+        productName: "Kosmita bez kapelusza",
         price: 40.0,
         productImage: productPhoto2,
-        description: "DON'T jakich mało",
+        description: "Kosmita bez kapelusza jakich mało",
     },
 ];

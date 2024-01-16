@@ -4,6 +4,7 @@
     /*justify-content: space-between; !* Zapewnia równomierne rozłożenie treści *!*/
     justify-content: center;
     align-items: center;
+    /*align-items: baseline;*/
 
     padding: 10px;
     background-color: white;
@@ -15,9 +16,10 @@
 }
 
 .product img {
-    width: 100%; /* Dostosowanie szerokości obrazka */
+    /*width: 100%; */
     object-fit: cover; /* Zapewnia że obrazy będą pokrywać obszar bez utraty proporcji */
     height: 200px; /* Stała wysokość dla wszystkich obrazków */
+    object-position: center;
 }
 .product:hover {
     transform: translateY(-5px);
@@ -57,7 +59,9 @@
     scale: 1.1;
 }
 
-a {
+.product a {
     text-decoration: none;
     color: #1a1a1a;
+    margin: auto;
+    text-align: center;
 }

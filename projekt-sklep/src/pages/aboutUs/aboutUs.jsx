@@ -13,12 +13,12 @@ function AboutUs() {
             <p>
                 <h2>What We Offer</h2>
 
-                We're proud to provide an extensive selection of items across various categories, ensuring quality and value for every customer. Whether you're searching for tech, home decor, or daily essentials, eBazarek Andrzej is your go-to online shop.
+                We are proud to provide an extensive selection of items across various categories, ensuring quality and value for every customer. Whether you are searching for tech, home decor, or daily essentials, eBazarek Andrzej is your go-to online shop.
             </p>
             <p>
                 <h2>Shop With Us</h2>
 
-                Discover the joy of finding everything you need at eBazarek Andrzej. We're here to make your shopping experience convenient and enjoyable.
+                Discover the joy of finding everything you need at eBazarek Andrzej. We are here to make your shopping experience convenient and enjoyable.
             </p>
         </div>
     );
