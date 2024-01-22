@@ -2,8 +2,10 @@ import React, {useContext} from "react";
 import { ShopContext } from "../../context/shopContext.jsx";
 import {Link} from "react-router-dom";
 import "./product.css";
+import { useAuth } from '../../context/authContext.jsx';
 
 const Product = (props) => {
+    const { isLoggedIn, login, logout } = useAuth();
     const {id , productName , price , productImage } = props.data;
     const { addToCart , cartItems } = useContext(ShopContext)
     return (
@@ -15,11 +17,11 @@ const Product = (props) => {
                     <p>{price} zł</p>
                 </div>
             </Link>
-                <button className="addToCartBttn" onClick={() => addToCart(id)}>
-                    Dodaj do koszyka! {cartItems[id] ? `(${cartItems[id]})` : null}
-                </button>
-
-
+                {isLoggedIn &&
+                    (<button className="addToCartBttn" onClick={() => addToCart(id)}>
+                        Dodaj do koszyka! {cartItems[id] ? `(${cartItems[id]})` : null}
+                    </button>)
+                }
         </div>
     )
 };
