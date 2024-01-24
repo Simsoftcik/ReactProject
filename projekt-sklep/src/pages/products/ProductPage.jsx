@@ -3,12 +3,13 @@ import {PRODUCTS} from "../../dummy/dummyProducts.js";
 import { ShopContext } from "../../context/shopContext.jsx";
 import './product-page.css';
 import {useParams} from "react-router-dom";
-
+import { useAuth } from '../../context/authContext.jsx';
 const ProductPage = () => {
 
     const { id } = useParams();
     const product = PRODUCTS[id];
     const { addToCart , cartItems , removeFromCart , removeCompletelyFromCart  } = useContext(ShopContext)
+    const { isLoggedIn, login, logout } = useAuth();
 
     return (
         <div className="p-box">
@@ -23,7 +24,9 @@ const ProductPage = () => {
                         <p>{product.description}</p>
                     </div>
                     <div className="p-bttn-section">
-                        <button className="p-addToCartBttn" onClick={() => addToCart(id)}>
+                        {isLoggedIn && (
+                            <>
+                            <button className="p-addToCartBttn" onClick={() => addToCart(id)}>
                             Dodaj do koszyka! {cartItems[id] ? `(${cartItems[id]})` : null}
                         </button>
                         <button className="p-removeOneFromCartBttn" onClick={() => removeFromCart(id)}>
@@ -32,6 +35,8 @@ const ProductPage = () => {
                         <button className="p-removeCompletlyFromCartBttn" onClick={() => removeCompletelyFromCart(id)}>
                             Usuń z koszyka wszystkie sztuki! {cartItems[id] ? `(${cartItems[id]})` : null}
                         </button>
+                            </>
+                        )}
                     </div>
 
                 </div>
