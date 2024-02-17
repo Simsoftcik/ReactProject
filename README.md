@@ -1,5 +1,4 @@
-# ReactProject
 Autorzy:
-Bartłomiej Szubiak
-Wiktor Dybalski
 Szymon Kubiczek
+Wiktor Dybalski
+Bartlomiej Szubiak
