@@ -1,5 +1,3 @@
-# ReactProject
-
 Autorzy:
 Szymon Kubiczek
 Wiktor Dybalski
